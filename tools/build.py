@@ -42,6 +42,15 @@ def load_ko():
         if at.startswith('S|'):
             _, w, i = at.split('|')
             subs[w][int(i)] = ko
+    # ko.tsv 는 같은 영문을 한 줄(첫 위치)로 합쳐 둔다 → 같은 문장을 쓰는 다른 웨이브 자막이 영어로 남았음
+    # (2026-11-12 제보 «Killed her family!» S|1_1_H_Dred, 체셔 수수께끼 등 16큐). all.tsv 의 S| 위치 전부를 영문으로 채움.
+    for l in open(os.path.join(ROOT, 'work', 'text', 'all.tsv'), encoding='utf-8').read().splitlines()[1:]:
+        f = l.split('\t')
+        if len(f) < 3 or not f[0].startswith('S|'): continue
+        _, w, i = f[0].split('|')
+        if int(i) not in subs[w]:
+            if f[2] not in by_en: raise SystemExit('자막 번역 없음: %s %s' % (f[0], f[2]))
+            subs[w][int(i)] = by_en[f[2]]
     return rows, by_en, subs
 
 

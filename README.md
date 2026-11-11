@@ -1,6 +1,6 @@
 # 앨리스 매드니스 리턴즈 (Alice: Madness Returns, PS3) 한글 패치
 
-> **내려받기:** [릴리즈 페이지](https://github.com/hospi0/alice2-kr-patch/releases/latest) — 최신 v0.9.
+> **내려받기:** [릴리즈 페이지](https://github.com/hospi0/alice2-kr-patch/releases/latest) — 최신 v0.91.
 > 디스크판(BLUS30607)과 PSN 판(NPUB30545) 묶음이 따로 있습니다. 적용 방법·원본 MD5 는 묶음의 readme.txt 에 있습니다.
 >
 > 이 저장소에는 도구·번역 텍스트·작업 문서만 있습니다(게임 데이터·빌드 결과물 없음).

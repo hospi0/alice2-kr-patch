@@ -17,7 +17,7 @@ HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 import build
 
-VER = 'v0.9'
+VER = 'v0.91'
 XDELTA = r'C:\claude\utils\xdelta.exe'
 EDS = {
     'disc': ('Disc', 'BLUS30607', '디스크판 (BLUS30607, 북미)', 'PS3_GAME\\USRDIR\\ALICEGAME\\COOKEDPS3'),
