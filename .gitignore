@@ -1,0 +1,8 @@
+my files/
+dist/
+__pycache__/
+work/*
+!work/text/
+work/text/*
+!work/text/ko.tsv
+!work/ko/
